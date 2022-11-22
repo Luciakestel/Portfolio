@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: $colorOne;
+  }
+  &_container {
+    display: flex;
+    &_menu {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 0.8rem;
+      margin-right: 1.5rem;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  &__nav {
+    &__list {
+      display: none;
+      @include tablet {
+        display: flex;
+        gap: 2rem;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        margin-right: 2rem;
+      }
+      &-element {
+        color: $colorTwo;
+      }
+    }
+  }
+}
+
+.menu {
+  width: 12rem;
+  height: 12rem;
+  border: 0.1rem solid black;
+  border-radius: 2.2rem;
+  text-align: center;
+  color: black;
+}

@@ -1,0 +1,36 @@
+@import 'core/variables';
+@import 'core/reset';
+@import 'core/responsive';
+// @import 'components/stars';
+@import 'layout/header';
+@import 'layout/sobreMi';
+@import 'layout/skills';
+@import 'layout/proyectos';
+@import 'layout/contacto';
+@import 'layout/footer';
+
+.collapse {
+  display: none;
+}
+
+.body {
+  background-image: linear-gradient(
+    185deg,
+    #caeeff 0,
+    #90c2f5 50%,
+    #5198d6 100%
+  );
+}
+.title {
+  color: $colorFive;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
