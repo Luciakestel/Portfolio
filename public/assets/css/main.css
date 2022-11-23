@@ -165,7 +165,7 @@ table {
         margin-top: 1rem;
         margin-right: 2rem; } }
     .header__nav__list-element {
-      color: #551ff3; }
+      color: #f9f871; }
 
 .menu {
   width: 12rem;
@@ -218,7 +218,7 @@ table {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #551ff3; }
+  color: #f9f871; }
   @media all and (min-width: 768px) {
     .front {
       font-size: 1.8rem; } }
@@ -362,7 +362,7 @@ table {
   background-image: linear-gradient(185deg, #caeeff 0, #90c2f5 50%, #5198d6 100%); }
 
 .title {
-  color: #bb3f99;
+  color: #ff6f91;
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 2rem;
