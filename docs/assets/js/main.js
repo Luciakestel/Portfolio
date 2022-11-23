@@ -1,0 +1,1 @@
+"use strict";const menuHamb=document.querySelector(".js_menu_hamb"),menuNav=document.querySelector(".js_menu");function HandleClick(){menuNav.classList.contains("collapse")?(menuNav.classList.remove("collapse"),menuNav.classList.add("menu")):menuNav.classList.add("collapse")}menuHamb.addEventListener("click",HandleClick);
