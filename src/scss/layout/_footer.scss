@@ -1,13 +1,26 @@
 .footer {
   font-family: $fontPpal;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-top: 0.1rem solid black;
+  border-radius: 2rem;
+  &__copy {
+    font-weight: bold;
+    font-size: 1rem;
+  }
   &__nav__list {
     display: flex;
-    &-icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+    &-element {
       padding: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: $colorSalmon;
     }
   }
 }

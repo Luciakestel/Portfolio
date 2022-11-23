@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="../assets/images/starFavicon.svg">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="./assets/images/starFavicon.svg">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Portfolio de Lucía Kestel</title>
   </head>
 
   <body class="body">
     <header class="header">
       <h1 class="header__title">Lucía Kestel</h1>
-     
-      <nav class="header__nav collapse js_menu">
-        <ul class="header__nav__list">
-          <li><a href="index.html#sobreMi" class="header__nav__list-element">Sobre mi</a></li>
-          <li><a href="index.html#skills" class="header__nav__list-element">Skills</a></li>
-          <li><a href="index.html#proyectos" class="header__nav__list-element">Proyectos</a></li>
-          <li><a href="index.html#contacto" class="header__nav__list-element">Contacto</a></li>
+      <div>
+        <ul class="redes">
+          <li><a href="mailto:luciakestelpires@gmail.com" target="_blank" class="redes_icon"><i class="fa-regular fa-envelope preview__icons--color"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/lucia-kestel/" target="_blank" class="redes_icon"><i class="fa-brands fa-linkedin-in preview__icons--color"></i></a></li>
+          <li><a href="https://github.com/Luciakestel" target="_blank" class="redes_icon"><i class="fa-brands fa-github-alt preview__icons--color"></i></a></li>
+        </ul>
+      </div>
+
+      <nav class="menuPlegable collapse js_menu">
+        <ul class="menuPlegable__list">
+          <li><a href="index.html#sobreMi" class="menuPlegable__list-element">Sobre mi</a></li>
+          <li><a href="index.html#skills" class="menuPlegable__list-element">Skills</a></li>
+          <li><a href="index.html#proyectos" class="menuPlegable__list-element">Proyectos</a></li>
+          <li><a href="index.html#contacto" class="menuPlegable__list-element">Contacto</a></li>
         </ul>
       </nav>
 
@@ -244,9 +251,9 @@
     <p class="footer__copy">&copy;Lucía Kestel 2022</p>
     <nav class="footer__nav">
       <ul class="footer__nav__list">
-        <li class="footer__nav__list-icon"><a href="mailto:luciakestelpires@gmail.com" target="_blank"><i class="fa-regular fa-envelope preview__icons--color"></i></a></li>
-        <li class="footer__nav__list-icon"><a href="https://www.linkedin.com/in/lucia-kestel/" target="_blank"><i class="fa-brands fa-linkedin-in preview__icons--color"></i></a></li>
-        <li class="footer__nav__list-icon"><a href="https://github.com/Luciakestel" target="_blank"><i class="fa-brands fa-github-alt preview__icons--color"></i></a></li>
+        <li ><a href="mailto:luciakestelpires@gmail.com" target="_blank" class="footer__nav__list-element">Correo electrónico</a></li>
+        <li ><a href="https://www.linkedin.com/in/lucia-kestel/" target="_blank" class="footer__nav__list-element">LinkedIn</a></li>
+        <li ><a href="https://github.com/Luciakestel" target="_blank" class="footer__nav__list-element">GitHub</a></li>
       </ul>
     </nav>
   </footer>
@@ -358,3 +365,4 @@
   <script src="../assets/js/main.js"></script>
   </body>
 </html>
+
