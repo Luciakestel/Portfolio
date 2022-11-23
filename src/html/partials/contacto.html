@@ -1,0 +1,28 @@
+<section class="contacto" id="contacto">
+    <h2 class="title"><span class="lines"> Contacto </span></h2>
+    <form action="https://formspree.io/f/mvoyyepd" method="post" class="contacto_form">
+      <div class="form_box">
+        <label for="name" class="form_box_label">Nombre:</label>
+        <input type="text" name="name" id="name" placeholder="Nombre completo" class="form_box_input">
+      </div>
+
+      <div class="form_box">
+        <label for="email" class="form_box_label">Correo electrónico:</label>
+        <input type="email" name="email" id="email" class="form_box_input" placeholder="ejemplo@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+      </div>
+
+      <div class="form_box">
+        <label for="asunto" class="form_box_label">Asunto:</label>
+        <input type="text" name="asunto" id="asunto" placeholder="Asunto" class="form_box_input">
+      </div>
+
+      <div class="form_box">
+      <label for="mensaje" class="form_box_label">Mensaje:</label>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe aquí tu mensaje" class="form_box_input form_msj"></textarea>
+      </div>
+
+      <div class="box">
+      <button class="box_btn">Enviar</button>
+    </div>
+    </form>
+   </section>

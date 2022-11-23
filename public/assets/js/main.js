@@ -2,11 +2,12 @@
 
 const menuHamb = document.querySelector('.js_menu_hamb');
 const menuNav = document.querySelector('.js_menu');
+console.log('holis');
 
 function HandleClick(){
+    console.log('haciendo click');
     if(menuNav.classList.contains('collapse')){
         menuNav.classList.remove('collapse');
-        menuNav.classList.add('menu');
     } else {
         menuNav.classList.add('collapse');
     }
