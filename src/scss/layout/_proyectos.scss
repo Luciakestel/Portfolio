@@ -1,15 +1,17 @@
 .proyectos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  @include tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 10rem;
-    margin-right: 10rem;
+  &_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
   }
   &_article {
     width: 15rem;
