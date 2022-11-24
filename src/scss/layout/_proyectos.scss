@@ -1,11 +1,17 @@
 .proyectos {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 300px;
+  height: 80rem;
+
   &_list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
+
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
@@ -13,12 +19,16 @@
       margin-right: 10rem;
     }
   }
+  &_title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   &_article {
     width: 15rem;
     height: 18rem;
-    border: 0.1rem solid black;
+    border: 0.2rem solid white;
     border-radius: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -49,9 +59,9 @@
     }
   }
 }
-.fa-github-alt {
+.icon_link {
   color: black;
 }
-.fa-link {
-  color: darkblue;
+.icon_github {
+  color: black;
 }

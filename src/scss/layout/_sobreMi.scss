@@ -3,22 +3,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 300px;
+  &_title {
+    margin-top: 1rem;
+  }
   &_article {
     text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
     @include tablet {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-left: 10rem;
-      margin-right: 10rem;
     }
 
     &_text {
       padding: 0.5rem;
       text-align: center;
-      margin-bottom: 1rem;
+      text-align: justify;
+      line-height: 1.5rem;
+      margin-left: 0.7rem;
+      margin-right: 0.7rem;
       @include tablet {
         width: 60%;
         margin-left: 0;
@@ -26,10 +36,11 @@
       }
     }
     &_img {
-      width: 10rem;
-      height: 10rem;
-      border-radius: 5rem;
-      margin-top: 2rem;
+      width: 300px;
+      height: 300px;
+      margin-top: -16px;
+      border-top-left-radius: 3rem;
+      border-top-right-radius: 3rem;
       @include tablet {
         width: 15rem;
         height: 15rem;
@@ -45,7 +56,8 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
-  color: $colorTwo;
+  color: $colorOne;
+
   @include tablet {
     font-size: 1.8rem;
   }
