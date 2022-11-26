@@ -163,7 +163,7 @@ table {
   border: 0.1rem solid white;
   border-radius: 1rem;
   position: absolute;
-  top: 4.6rem;
+  top: 5rem;
   left: 0.5rem;
   padding: 0.5rem; }
   @media all and (min-width: 768px) {
@@ -185,8 +185,8 @@ table {
   align-content: center;
   position: absolute;
   top: 5.2rem;
-  right: 0;
-  background-color: rgba(55, 104, 238, 0.9); }
+  right: 1rem;
+  background-color: rgba(255, 255, 255, 0.9); }
   .menuPlegable__list {
     display: flex;
     flex-direction: column;
@@ -273,6 +273,19 @@ a {
   opacity: 1;
   transform: translateY(0px); }
 
+.fa-linkedin-in:hover {
+  color: #0e76a8; }
+
+.fa-github-alt:hover {
+  color: black; }
+
+.fa-envelope:hover {
+  color: #ea4335; }
+
+.header__title:hover {
+  transform: scale(1.5);
+  margin-left: 4rem; }
+
 .sobreMi {
   display: flex;
   flex-direction: column;
@@ -288,13 +301,16 @@ a {
   @media all and (min-width: 768px) {
     .sobreMi {
       width: 90%;
+      height: 332px;
       display: grid;
       grid-template-areas: 'b a a' 'b c c' 'b c c'; } }
   .sobreMi_title {
     margin-top: 3rem;
-    margin-bottom: 1rem;
-    grid-area: a;
-    margin-left: 19rem; }
+    margin-bottom: 1rem; }
+    @media all and (min-width: 768px) {
+      .sobreMi_title {
+        grid-area: a;
+        margin-left: 18rem; } }
   .sobreMi_article {
     text-align: center; }
     @media all and (min-width: 768px) {
@@ -310,7 +326,14 @@ a {
       @media all and (min-width: 768px) {
         .sobreMi_article_text {
           width: 60%;
-          margin-left: 19rem;
+          margin-left: 18rem;
+          margin-top: 6rem;
+          font-size: 1.2rem;
+          grid-area: c; } }
+      @media all and (min-width: 1000px) {
+        .sobreMi_article_text {
+          width: 60%;
+          margin-left: 22rem;
           margin-top: 6rem;
           font-size: 1.2rem;
           grid-area: c; } }
@@ -324,9 +347,9 @@ a {
         .sobreMi_article_img {
           border-top-right-radius: 0;
           border-bottom-left-radius: 3rem;
-          margin-top: 0;
           grid-area: b;
-          margin-left: -1rem; } }
+          margin-left: -1rem;
+          height: 332px; } }
 
 .front {
   font-family: 'Amatic SC', cursive;
@@ -343,6 +366,10 @@ a {
   content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
   text-decoration: line-through; }
   @media all and (min-width: 768px) {
+    .lines:after,
+    .lines:before {
+      content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0'; } }
+  @media all and (min-width: 1000px) {
     .lines:after,
     .lines:before {
       content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0'; } }
@@ -362,13 +389,28 @@ a {
   margin-bottom: 2rem; }
   @media all and (min-width: 768px) {
     .skills {
-      margin-left: 10rem;
-      margin-right: 10rem; } }
+      display: grid;
+      grid-template-areas: 'a a a' 'b b b';
+      width: 90%; } }
   .skills_title {
     margin-top: 1rem;
     margin-bottom: 1rem; }
+    @media all and (min-width: 768px) {
+      .skills_title {
+        grid-area: a;
+        margin-top: -4rem; } }
   .skills_container {
     width: 250px; }
+    @media all and (min-width: 768px) {
+      .skills_container {
+        width: 90%;
+        grid-area: b;
+        text-align: start;
+        margin-top: -10rem;
+        margin-left: 2rem; } }
+    @media all and (min-width: 1000px) {
+      .skills_container {
+        margin-left: 6rem; } }
   .skills_text {
     line-height: 1.5rem;
     text-align: justify;
@@ -378,7 +420,7 @@ a {
     @media all and (min-width: 768px) {
       .skills_text {
         font-size: 1.2rem;
-        line-height: 2rem; } }
+        margin-top: 1rem; } }
 
 .strong {
   font-weight: bold; }
@@ -396,6 +438,15 @@ a {
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem; }
+  @media all and (min-width: 768px) {
+    .proyectos {
+      width: 90%;
+      height: auto;
+      display: row;
+      flex-wrap: wrap; } }
+  @media all and (min-width: 768px) {
+    .proyectos_title {
+      margin-top: 2rem; } }
   .proyectos_list {
     display: flex;
     flex-direction: column;
@@ -405,8 +456,7 @@ a {
       .proyectos_list {
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 10rem;
-        margin-right: 10rem; } }
+        margin-bottom: 2rem; } }
   .proyectos_article {
     width: 15rem;
     height: 18rem;

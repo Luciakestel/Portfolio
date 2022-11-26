@@ -11,7 +11,17 @@
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-
+  @include tablet {
+    width: 90%;
+    height: auto;
+    display: row;
+    flex-wrap: wrap;
+  }
+  &_title {
+    @include tablet {
+      margin-top: 2rem;
+    }
+  }
   &_list {
     display: flex;
     flex-direction: column;
@@ -21,8 +31,7 @@
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
-      margin-left: 10rem;
-      margin-right: 10rem;
+      margin-bottom: 2rem;
     }
   }
 

@@ -35,7 +35,7 @@
   border: 0.1rem solid white;
   border-radius: 1rem;
   position: absolute;
-  top: 4.6rem;
+  top: 5rem;
   left: 0.5rem;
   padding: 0.5rem;
   @include tablet {
@@ -59,8 +59,8 @@
   align-content: center;
   position: absolute;
   top: 5.2rem;
-  right: 0;
-  background-color: rgba(55, 104, 238, 0.9);
+  right: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
   &__list {
     display: flex;
     flex-direction: column;
@@ -157,4 +157,21 @@ a {
 .links:hover:before {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.fa-linkedin-in:hover {
+  color: #0e76a8;
+}
+
+.fa-github-alt:hover {
+  color: black;
+}
+
+.fa-envelope:hover {
+  color: #ea4335;
+}
+
+.header__title:hover {
+  transform: scale(1.5);
+  margin-left: 4rem;
 }
