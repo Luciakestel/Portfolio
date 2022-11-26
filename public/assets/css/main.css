@@ -163,12 +163,12 @@ table {
   border: 0.1rem solid white;
   border-radius: 1rem;
   position: absolute;
-  top: 4.5rem;
+  top: 4.6rem;
   left: 0.5rem;
   padding: 0.5rem; }
   @media all and (min-width: 768px) {
     .redes {
-      top: 6rem; } }
+      top: 5rem; } }
   .redes_icon {
     width: 3rem;
     height: 3rem;
@@ -202,7 +202,7 @@ table {
 .menu_hamb {
   cursor: pointer;
   position: relative;
-  left: 4rem;
+  left: 25%;
   top: 0.5rem;
   padding: 10px 40px 15px 0px; }
   @media all and (min-width: 768px) {
@@ -279,22 +279,27 @@ a {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 300px; }
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem; }
+  @media all and (min-width: 768px) {
+    .sobreMi {
+      width: 90%;
+      display: grid;
+      grid-template-areas: 'b a a' 'b c c' 'b c c'; } }
   .sobreMi_title {
-    margin-top: 1rem; }
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    grid-area: a;
+    margin-left: 19rem; }
   .sobreMi_article {
     text-align: center; }
     @media all and (min-width: 768px) {
       .sobreMi_article {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; } }
+        display: grid; } }
     .sobreMi_article_text {
       padding: 0.5rem;
       text-align: center;
@@ -305,8 +310,10 @@ a {
       @media all and (min-width: 768px) {
         .sobreMi_article_text {
           width: 60%;
-          margin-left: 0;
-          font-size: 1.2rem; } }
+          margin-left: 19rem;
+          margin-top: 6rem;
+          font-size: 1.2rem;
+          grid-area: c; } }
     .sobreMi_article_img {
       width: 300px;
       height: 300px;
@@ -315,11 +322,11 @@ a {
       border-top-right-radius: 3rem; }
       @media all and (min-width: 768px) {
         .sobreMi_article_img {
-          width: 15rem;
-          height: 15rem;
-          border-radius: 2rem;
-          margin-right: 5rem;
-          margin-top: 0; } }
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 3rem;
+          margin-top: 0;
+          grid-area: b;
+          margin-left: -1rem; } }
 
 .front {
   font-family: 'Amatic SC', cursive;
@@ -348,10 +355,11 @@ a {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   width: 300px;
-  height: 33rem; }
+  height: 33rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
   @media all and (min-width: 768px) {
     .skills {
       margin-left: 10rem;
@@ -376,12 +384,18 @@ a {
   font-weight: bold; }
 
 .proyectos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   width: 300px;
-  height: 80rem; }
+  height: 85rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
   .proyectos_list {
     display: flex;
     flex-direction: column;
@@ -393,15 +407,12 @@ a {
         flex-wrap: wrap;
         margin-left: 10rem;
         margin-right: 10rem; } }
-  .proyectos_title {
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
   .proyectos_article {
     width: 15rem;
     height: 18rem;
     border: 0.2rem solid white;
     border-radius: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -497,7 +508,19 @@ a {
       padding: 0.5rem;
       font-size: 1.1rem;
       font-weight: bold;
-      color: white; }
+      color: #e57373; }
+  .footer_box_arrow {
+    transform: scale(2);
+    color: black;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
+
+@keyframes move {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(2); } }
 
 .collapse {
   display: none; }

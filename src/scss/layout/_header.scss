@@ -35,11 +35,11 @@
   border: 0.1rem solid white;
   border-radius: 1rem;
   position: absolute;
-  top: 4.5rem;
+  top: 4.6rem;
   left: 0.5rem;
   padding: 0.5rem;
   @include tablet {
-    top: 6rem;
+    top: 5rem;
   }
   &_icon {
     width: 3rem;
@@ -78,7 +78,7 @@
 .menu_hamb {
   cursor: pointer;
   position: relative;
-  left: 4rem;
+  left: 25%;
   top: 0.5rem;
   padding: 10px 40px 15px 0px;
   @include tablet {

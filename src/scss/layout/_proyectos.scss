@@ -1,10 +1,16 @@
 .proyectos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   width: 300px;
-  height: 80rem;
+  height: 85rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   &_list {
     display: flex;
@@ -19,16 +25,13 @@
       margin-right: 10rem;
     }
   }
-  &_title {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+
   &_article {
     width: 15rem;
     height: 18rem;
     border: 0.2rem solid white;
     border-radius: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 0.5rem;
     display: flex;
     flex-direction: column;

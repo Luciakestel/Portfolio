@@ -4,22 +4,27 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   width: 300px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  @include tablet {
+    width: 90%;
+    display: grid;
+    grid-template-areas: 'b a a' 'b c c' 'b c c';
+  }
   &_title {
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    grid-area: a;
+    margin-left: 19rem;
   }
   &_article {
     text-align: center;
     @include tablet {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: grid;
     }
 
     &_text {
@@ -31,8 +36,10 @@
       margin-right: 0.7rem;
       @include tablet {
         width: 60%;
-        margin-left: 0;
+        margin-left: 19rem;
+        margin-top: 6rem;
         font-size: 1.2rem;
+        grid-area: c;
       }
     }
     &_img {
@@ -42,11 +49,11 @@
       border-top-left-radius: 3rem;
       border-top-right-radius: 3rem;
       @include tablet {
-        width: 15rem;
-        height: 15rem;
-        border-radius: 2rem;
-        margin-right: 5rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 3rem;
         margin-top: 0;
+        grid-area: b;
+        margin-left: -1rem;
       }
     }
   }
