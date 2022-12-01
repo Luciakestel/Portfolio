@@ -134,16 +134,20 @@ table {
   border-spacing: 0; }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  position: relative; }
   .header__title {
     font-family: 'Amatic SC', cursive;
     text-transform: uppercase;
     padding: 0.5rem;
     font-size: 3rem;
     margin-top: 1rem;
-    color: white; }
+    color: white;
+    width: 40%; }
+  @media all and (min-width: 768px) {
+    .header__nav {
+      position: absolute;
+      top: 0.6rem;
+      right: 0; } }
   .header__nav__list {
     display: none; }
     @media all and (min-width: 768px) {
@@ -201,9 +205,9 @@ table {
 
 .menu_hamb {
   cursor: pointer;
-  position: relative;
-  left: 25%;
-  top: 0.5rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
   padding: 10px 40px 15px 0px; }
   @media all and (min-width: 768px) {
     .menu_hamb {
@@ -273,18 +277,23 @@ a {
   opacity: 1;
   transform: translateY(0px); }
 
-.fa-linkedin-in:hover {
-  color: #0e76a8; }
+@media all and (min-width: 768px) {
+  .fa-linkedin-in:hover {
+    color: #0e76a8; } }
 
-.fa-github-alt:hover {
-  color: black; }
+@media all and (min-width: 768px) {
+  .fa-github-alt:hover {
+    color: black; } }
 
-.fa-envelope:hover {
-  color: #ea4335; }
+@media all and (min-width: 768px) {
+  .header__title:hover {
+    transform: scale(1.5);
+    margin-left: 12rem; } }
 
-.header__title:hover {
-  transform: scale(1.5);
-  margin-left: 4rem; }
+@media all and (min-width: 1000px) {
+  .header__title:hover {
+    transform: scale(1.5);
+    margin-left: 20rem; } }
 
 .sobreMi {
   display: flex;
@@ -459,7 +468,7 @@ a {
         margin-bottom: 2rem; } }
   .proyectos_article {
     width: 15rem;
-    height: 18rem;
+    height: 20rem;
     border: 0.2rem solid white;
     border-radius: 2rem;
     margin-top: 2rem;
@@ -477,7 +486,8 @@ a {
       width: 10rem;
       height: 10rem;
       border-radius: 2rem;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
     .proyectos_article-text {
       margin-top: 0.5rem; }
   .proyectos_container-icon {

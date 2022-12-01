@@ -1,8 +1,5 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  position: relative;
   &__title {
     font-family: 'Amatic SC', cursive;
     text-transform: uppercase;
@@ -12,6 +9,11 @@
     color: white;
   }
   &__nav {
+    @include tablet {
+      position: absolute;
+      top: 0.6rem;
+      right: 0;
+    }
     &__list {
       display: none;
       @include tablet {
@@ -77,9 +79,10 @@
 }
 .menu_hamb {
   cursor: pointer;
-  position: relative;
-  left: 25%;
-  top: 0.5rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+
   padding: 10px 40px 15px 0px;
   @include tablet {
     display: none;
@@ -160,18 +163,24 @@ a {
 }
 
 .fa-linkedin-in:hover {
-  color: #0e76a8;
+  @include tablet {
+    color: #0e76a8;
+  }
 }
 
 .fa-github-alt:hover {
-  color: black;
-}
-
-.fa-envelope:hover {
-  color: #ea4335;
+  @include tablet {
+    color: black;
+  }
 }
 
 .header__title:hover {
-  transform: scale(1.5);
-  margin-left: 4rem;
+  @include tablet {
+    transform: scale(1.5);
+    margin-left: 12rem;
+  }
+  @include desktop {
+    transform: scale(1.5);
+    margin-left: 20rem;
+  }
 }
