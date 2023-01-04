@@ -141,8 +141,7 @@ table {
     padding: 0.5rem;
     font-size: 3rem;
     margin-top: 1rem;
-    color: white;
-    width: 40%; }
+    color: white; }
   @media all and (min-width: 768px) {
     .header__nav {
       position: absolute;
@@ -287,13 +286,10 @@ a {
 
 @media all and (min-width: 768px) {
   .header__title:hover {
-    transform: scale(1.5);
-    margin-left: 12rem; } }
-
-@media all and (min-width: 1000px) {
-  .header__title:hover {
-    transform: scale(1.5);
-    margin-left: 20rem; } }
+    background: -webkit-linear-gradient(#dc78b7, #6c54c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white; } }
 
 .sobreMi {
   display: flex;
@@ -443,19 +439,21 @@ a {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3rem;
   width: 300px;
-  height: 85rem;
   margin: 0 auto;
   margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  padding-bottom: 2rem; }
   @media all and (min-width: 768px) {
     .proyectos {
       width: 90%;
       height: auto;
       display: row;
       flex-wrap: wrap; } }
-  @media all and (min-width: 768px) {
-    .proyectos_title {
-      margin-top: 2rem; } }
+  .proyectos_title {
+    margin-top: 2rem; }
+    @media all and (min-width: 768px) {
+      .proyectos_title {
+        margin-top: 2rem; } }
   .proyectos_list {
     display: flex;
     flex-direction: column;

@@ -176,11 +176,9 @@ a {
 
 .header__title:hover {
   @include tablet {
-    transform: scale(1.5);
-    margin-left: 12rem;
-  }
-  @include desktop {
-    transform: scale(1.5);
-    margin-left: 20rem;
+    background: -webkit-linear-gradient(#dc78b7, #6c54c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
   }
 }
