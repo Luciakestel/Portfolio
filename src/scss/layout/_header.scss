@@ -55,23 +55,15 @@
 }
 
 .theme_toggle {
-  position: absolute;
-  top: 5rem;
-  left: 9rem;
   background: transparent;
-  border: 0.1rem solid var(--border-strong);
-  border-radius: 1rem;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 0;
   cursor: pointer;
-  color: var(--text-on-accent);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  padding: 0;
+  color: inherit;
   transition: transform 0.2s ease-out;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }
 
@@ -79,7 +71,6 @@
   border: 0.1rem solid;
   border-radius: 1.5rem;
   width: 10rem;
-  height: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,6 +78,7 @@
   position: absolute;
   top: 5.2rem;
   right: 1rem;
+  padding: 0.5rem 0;
   background-color: var(--menu-bg);
   border-color: var(--border-strong);
   &__list {
