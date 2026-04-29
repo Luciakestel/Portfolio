@@ -4,17 +4,14 @@ const menuHamb = document.querySelector('.js_menu_hamb');
 const menuNav = document.querySelector('.js_menu');
 
 
-function HandleClick(event){
-    event.preventDefault();
+function HandleClick(){
     this.classList.toggle("active");
-    if(menuNav.classList.contains('collapse')){
-        menuNav.classList.remove('collapse');
-    } else {
-        menuNav.classList.add('collapse');
-    }
+    const isOpen = menuNav.classList.toggle('collapse') === false;
+    this.setAttribute('aria-expanded', String(isOpen));
+    this.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
 }
 
-menuHamb.addEventListener(('click'), HandleClick);
+menuHamb.addEventListener('click', HandleClick);
 
 const sections = document.querySelectorAll('.main > section');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -85,6 +85,8 @@
   position: absolute;
   top: 1.2rem;
   right: 1rem;
+  background: transparent;
+  border: 0;
 
   padding: 10px 40px 15px 0px;
   @include tablet {

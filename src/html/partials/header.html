@@ -1,17 +1,17 @@
 <header class="header" id="header">
     <h1 class="header__title">Lucía Kestel</h1>
-    <a href="" class="menu_hamb js_menu_hamb">
-      <span class="hamb"></span>
-    </a>
+    <button type="button" class="menu_hamb js_menu_hamb" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-mobile">
+      <span class="hamb" aria-hidden="true"></span>
+    </button>
     <div>
       <ul class="redes">
-        <li><a href="https://www.linkedin.com/in/lucia-kestel/" target="_blank" class="redes_icon"><i class="fa-brands fa-linkedin-in preview__icons--color"></i></a></li>
-        <li><a href="https://github.com/Luciakestel" target="_blank" class="redes_icon"><i class="fa-brands fa-github-alt preview__icons--color"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/lucia-kestel/" target="_blank" rel="noopener" class="redes_icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in preview__icons--color" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Luciakestel" target="_blank" rel="noopener" class="redes_icon" aria-label="GitHub"><i class="fa-brands fa-github-alt preview__icons--color" aria-hidden="true"></i></a></li>
       </ul>
     </div>
 
     <div>
-      <nav class="menuPlegable collapse js_menu">
+      <nav class="menuPlegable collapse js_menu" id="menu-mobile" aria-label="Menú móvil">
         <ul class="menuPlegable__list">
           <li><a href="index.html#sobreMi" class="menuPlegable__list-element">Sobre mi</a></li>
           <li><a href="index.html#skills" class="menuPlegable__list-element">Skills</a></li>
@@ -19,7 +19,7 @@
           <li><a href="index.html#contacto" class="menuPlegable__list-element">Contacto</a></li>
         </ul>
       </nav>
-      <nav class="header__nav ">
+      <nav class="header__nav " aria-label="Menú principal">
         <ul class="header__nav__list">
           <li><a href="index.html#sobreMi" class="header__nav__list-element links">Sobre mi</a></li>
           <li><a href="index.html#skills" class="header__nav__list-element links">Skills</a></li>
