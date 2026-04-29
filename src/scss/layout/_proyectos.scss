@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: var(--surface-bg);
   border-radius: 3rem;
   width: 300px;
   margin: 0 auto;
@@ -41,7 +41,7 @@
   &_article {
     width: 15rem;
     height: 20rem;
-    border: 0.2rem solid white;
+    border: 0.2rem solid var(--border-strong);
     border-radius: 2rem;
     margin-top: 2rem;
     margin-left: 0.5rem;
@@ -76,8 +76,8 @@
   }
 }
 .icon_link {
-  color: black;
+  color: var(--text-primary);
 }
 .icon_github {
-  color: black;
+  color: var(--text-primary);
 }

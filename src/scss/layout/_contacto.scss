@@ -39,8 +39,9 @@
     padding: 0.5rem;
     border-radius: 1rem;
     margin-right: 2.5rem;
-    background-color: white;
-    border: 0.1rem solid black;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 0.1rem solid var(--input-border);
     margin-bottom: 1rem;
     @include tablet {
       width: 8rem;

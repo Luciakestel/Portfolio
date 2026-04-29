@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: var(--surface-bg);
   border-radius: 3rem;
   width: 300px;
   margin: 0 auto;
@@ -76,7 +76,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
-  color: $colorOne;
+  color: var(--accent);
 
   @include tablet {
     font-size: 1.8rem;

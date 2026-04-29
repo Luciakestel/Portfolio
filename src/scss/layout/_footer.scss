@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 0.1rem solid black;
+  border-top: 0.1rem solid var(--text-primary);
   border-radius: 2rem;
   &__copy {
     font-weight: bold;
@@ -22,13 +22,13 @@
       padding: 0.5rem;
       font-size: 1.1rem;
       font-weight: bold;
-      color: $colorOne;
+      color: var(--accent);
     }
   }
   &_box {
     &_arrow {
       transform: scale(2);
-      color: black;
+      color: var(--text-primary);
       @keyframes move {
         0% {
           transform: scale(0);
