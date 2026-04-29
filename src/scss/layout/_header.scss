@@ -174,11 +174,3 @@ a {
   }
 }
 
-.header__title:hover {
-  @include tablet {
-    background: -webkit-linear-gradient(#dc78b7, #6c54c3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: white;
-  }
-}
