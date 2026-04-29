@@ -67,6 +67,8 @@
 
   &__icon {
     line-height: 1;
+    opacity: 0.45;
+    transition: opacity 0.2s ease-out, color 0.2s ease-out;
   }
 
   &__track {
@@ -82,7 +84,7 @@
   &__knob {
     position: absolute;
     top: 50%;
-    left: 0.1rem;
+    left: calc(100% - 0.65rem);
     transform: translateY(-50%);
     width: 0.55rem;
     height: 0.55rem;
@@ -91,8 +93,18 @@
     transition: left 0.2s ease-out;
   }
 
+  &[aria-checked='false'] .fa-sun {
+    opacity: 1;
+    color: #f5b748;
+  }
+
+  &[aria-checked='true'] .fa-moon {
+    opacity: 1;
+    color: #c8d1ec;
+  }
+
   &[aria-checked='true'] .theme_toggle__knob {
-    left: calc(100% - 0.65rem);
+    left: 0.1rem;
   }
 }
 
