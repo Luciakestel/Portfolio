@@ -33,7 +33,7 @@ gulp.task('bs-reload', done => {
 
 gulp.task('clean', del.bind(null, [config.env.dev.dest]));
 
-gulp.task('clean-dist', del.bind(null, [config.env.producction.dest]));
+gulp.task('clean-dist', del.bind(null, [config.env.production.dest]));
 
 gulp.task('css', done => {
   gulp
