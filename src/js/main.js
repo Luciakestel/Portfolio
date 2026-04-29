@@ -25,14 +25,21 @@ themeToggles.forEach(toggle => {
 });
 
 
-function HandleClick(){
-    this.classList.toggle("active");
-    const isOpen = menuNav.classList.toggle('collapse') === false;
-    this.setAttribute('aria-expanded', String(isOpen));
-    this.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+function setMobileMenuOpen(isOpen) {
+    menuHamb.classList.toggle('active', isOpen);
+    menuNav.classList.toggle('collapse', !isOpen);
+    menuHamb.setAttribute('aria-expanded', String(isOpen));
+    menuHamb.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
 }
 
-menuHamb.addEventListener('click', HandleClick);
+menuHamb.addEventListener('click', () => {
+    const isCurrentlyOpen = !menuNav.classList.contains('collapse');
+    setMobileMenuOpen(!isCurrentlyOpen);
+});
+
+menuNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => setMobileMenuOpen(false));
+});
 
 const sections = document.querySelectorAll('.main > section');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
