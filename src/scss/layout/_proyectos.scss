@@ -1,3 +1,5 @@
+@use '../core/responsive' as *;
+
 .proyectos {
   display: flex;
   flex-direction: column;
