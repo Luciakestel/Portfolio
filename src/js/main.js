@@ -3,19 +3,16 @@
 const menuHamb = document.querySelector('.js_menu_hamb');
 const menuNav = document.querySelector('.js_menu');
 const themeToggles = document.querySelectorAll('.js_theme_toggle');
-const themeIcons = document.querySelectorAll('.js_theme_icon');
 
-function applyThemeIcon(theme) {
+function syncThemeToggles(theme) {
     const isDark = theme === 'dark';
-    themeIcons.forEach(icon => {
-        icon.className = isDark ? 'fa-solid fa-sun js_theme_icon' : 'fa-solid fa-moon js_theme_icon';
-    });
     themeToggles.forEach(toggle => {
+        toggle.setAttribute('aria-checked', String(isDark));
         toggle.setAttribute('aria-label', isDark ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro');
     });
 }
 
-applyThemeIcon(document.documentElement.getAttribute('data-theme') || 'light');
+syncThemeToggles(document.documentElement.getAttribute('data-theme') || 'light');
 
 themeToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
@@ -23,7 +20,7 @@ themeToggles.forEach(toggle => {
         const next = current === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', next);
         try { localStorage.setItem('theme', next); } catch (e) {}
-        applyThemeIcon(next);
+        syncThemeToggles(next);
     });
 });
 
