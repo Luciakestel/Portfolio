@@ -9,10 +9,10 @@
   background-color: var(--surface-bg);
   border-radius: 3rem;
   width: 300px;
-  height: 33rem;
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
   @include tablet {
     display: grid;
     grid-template-areas: 'a a a' 'b b b';
