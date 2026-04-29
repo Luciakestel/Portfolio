@@ -14,29 +14,23 @@
   margin-bottom: 2rem;
   padding-bottom: 2rem;
   @include tablet {
-    display: grid;
-    grid-template-areas: 'a a a' 'b b b';
     width: 90%;
   }
   &_title {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    @include tablet {
-      grid-area: a;
-      margin-top: -4rem;
-    }
   }
   &_container {
     width: 250px;
     @include tablet {
       width: 90%;
-      grid-area: b;
       text-align: start;
-      margin-top: -10rem;
-      margin-left: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     @include desktop {
-      margin-left: 6rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
     }
   }
   &_text {
