@@ -9,18 +9,19 @@
 @use 'layout/footer';
 
 :root {
-  --bg-image: linear-gradient(#e57373, #ef9a9a, #ffcdd2, #ffebee);
-  --text-primary: #000;
-  --text-on-accent: #fff;
-  --surface-bg: rgba(255, 255, 255, 0.4);
-  --menu-bg: rgba(255, 255, 255, 0.9);
-  --menu-text: #000;
-  --accent: #{$colorOne};
-  --accent-soft: #{$colorFour};
-  --border-strong: #fff;
+  --bg-image: linear-gradient(135deg, #ffffff, #f9d8df);
+  --text-primary: #2a1d22;
+  --text-on-accent: #3d2229;
+  --surface-bg: #ffffff;
+  --surface-shadow: 0 4px 24px rgba(184, 70, 107, 0.1), 0 1px 4px rgba(184, 70, 107, 0.06);
+  --menu-bg: rgba(255, 255, 255, 0.95);
+  --menu-text: #2a1d22;
+  --accent: #b8466b;
+  --accent-soft: #b8466b;
+  --border-strong: rgba(61, 34, 41, 0.2);
   --input-bg: #fff;
-  --input-text: #000;
-  --input-border: #000;
+  --input-text: #2a1d22;
+  --input-border: rgba(61, 34, 41, 0.4);
 }
 
 :root[data-theme='dark'] {
@@ -28,6 +29,7 @@
   --text-primary: #e8e8ec;
   --text-on-accent: #f5f5f7;
   --surface-bg: rgba(255, 255, 255, 0.06);
+  --surface-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   --menu-bg: rgba(20, 20, 25, 0.92);
   --menu-text: #e8e8ec;
   --accent: #f48fb1;
@@ -44,6 +46,7 @@
     --text-primary: #e8e8ec;
     --text-on-accent: #f5f5f7;
     --surface-bg: rgba(255, 255, 255, 0.06);
+    --surface-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     --menu-bg: rgba(20, 20, 25, 0.92);
     --menu-text: #e8e8ec;
     --accent: #f48fb1;
