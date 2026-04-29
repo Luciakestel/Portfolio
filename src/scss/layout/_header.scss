@@ -3,6 +3,7 @@
 
 .header {
   position: relative;
+  z-index: 10;
   &__title {
     font-family: 'Amatic SC', cursive;
     text-transform: uppercase;
